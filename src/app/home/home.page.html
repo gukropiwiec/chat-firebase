@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chat Esallabs
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let mensagem of (mensagens) | async">
+    <ion-card>
+        <ion-label class="lblUsuario">{{ mensagem.usuario }} {{ mensagem.dataHora }}</ion-label>     
+      <ion-item lines="none">
+        <ion-label>{{ mensagem.mensagem }}</ion-label>
+      </ion-item>
+    </ion-card> 
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-item class="textarea">
+    <ion-input placeholder="Usuário" [(ngModel)]="mensagem.usuario"></ion-input>
+  </ion-item>
+  <ion-item class="textarea">
+    <ion-textarea [(ngModel)]="mensagem.mensagem" rows="2">Mensagem:</ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)="enviarMensagem()">Enviar</ion-button>
+</ion-footer>
