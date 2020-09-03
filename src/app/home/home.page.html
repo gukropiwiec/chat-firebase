@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Chat Esallabs
+      Chat Simulator
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -19,10 +19,10 @@
 
 <ion-footer>
   <ion-item class="textarea">
-    <ion-input placeholder="Usuário" [(ngModel)]="mensagem.usuario"></ion-input>
+    <ion-input placeholder="User" [(ngModel)]="mensagem.usuario"></ion-input>
   </ion-item>
   <ion-item class="textarea">
-    <ion-textarea [(ngModel)]="mensagem.mensagem" rows="2">Mensagem:</ion-textarea>
+    <ion-textarea [(ngModel)]="mensagem.mensagem" rows="2">Message:</ion-textarea>
   </ion-item>
-  <ion-button expand="block" (click)="enviarMensagem()">Enviar</ion-button>
+  <ion-button expand="block" (click)="enviarMensagem()">Send</ion-button>
 </ion-footer>
