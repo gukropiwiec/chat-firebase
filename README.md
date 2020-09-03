@@ -1,4 +1,5 @@
 # Chat simulator using Firebase
+![AngularVersion](https://img.shields.io/badge/angular-v10-red) ![IonicVersion](https://img.shields.io/badge/ionic-v5-blue)
 ## About
 Realtime chat project to learn about the integration of Firebase with Ionic/Angular, it displays the time and the user that sent the message.
 
